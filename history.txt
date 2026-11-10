@@ -1,0 +1,50 @@
+  491  cd x00220250
+  492  clear
+  493  mkdir CA1part2
+  494  cd CA1part2
+  495  git clone https://github.com/pearse1104/X00220250
+  496  git init
+  497  git clone https://github.com/pearse1104/X00220250
+  498  cd devopsCA1
+  499  git clone git@github.com:pearse1104/X00220250
+  500  git clone https://github.com/ReeceLawlorDriver/devopsProj
+  501  gh auth login
+  502  mkdir lab9 cd lab9
+  503  cd lab9
+  504  git init
+  505  gh repo create lab9 --public --source=. --remote=origin
+  506  gh repo view
+  507  gh label create "EPIC" --color "800080" --description "Epic level issue"
+  508  gh issue create --title "do lab9" --body "Epic issue tracking lab9 completion." --label "EPIC"
+  509  gh issue create --title "create validate-data script" --body "Issue for validation script." --label "enhancement" --assignee "@me"
+  510  nano validate-data.sh
+  511  chmod +x validate-data.sh
+  512  bash validate-data.sh "pearse mccarthy" "0831122334"
+  513  bash validate-data.sh "pearse mccarthy" "08311223344"
+  514  bash validate-data.sh "pearseT mccarthy" "0831122334"
+  515  gh issue create --title "create yaml test script" --body "Issue for GitHub Actions YAML workflow." --label "enhancement" --assignee "@me"
+  516  mkdir -p .github/workflows
+  517  nano .github/workflows/basictests.yml
+  518  git add .
+  519  git commit -m "Add validate-data script and GitHub Actions workflow"
+  520  git branch -M main
+  521  git push -u origin main
+  522  gh issue create --title "create project board view" --body "project board view." --label "enhancement" --assignee "@me"
+  523  git checkout -b test
+  524  nano validate-data.sh
+  525  bash validate-data.sh "pearseT mccarthy" "0831122334"
+  526  nano .github/workflows/basictests.yml
+  527  git add .
+  528  git commit -m "Update name length to 20 and update workflow branches"
+  529  git push origin test
+  530  history > history.txt
+  531  nano history.txt
+  532  history 30 > history.txt
+  533  nano history.txt
+  534  history 32 > history.txt
+  535  nano history.txt
+  536  history 38 > history.txt
+  537  nano history.txt
+  538  history 38 > history.txt
+  539  nano history.txt
+  540  history 50 > history.txt
